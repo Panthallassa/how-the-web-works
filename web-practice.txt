@@ -1,0 +1,43 @@
+HTTP stands for Hypertext Transfer Protocol. when you click or enter
+and web address your browser uses HTTP to understand what it is you're
+lookiong for and the server responds with the page/s you want
+
+URL stands for Unifrom Resource Locator, it is a web address that locates
+retrieves resources.
+
+DNS stands for Domain Name Syestem. When you type a web address into your
+browser your computer starts a DNS request to find the IP address that
+is attached to the web address. Your computer checks frist the local DNS
+cache but if it is not there it sends the request to a DNS resolver.
+the DNS resolver will translate ther domain name into an IP address. If
+the IP address is still not found then the request is sent to Root DNS
+servers whhich are for top-level domain names. Once the request is found
+your coputer can connect you to the web server and you can access the
+chosen web page
+
+a query string is a part of a web address that containes information
+in the form of key-value pairs. it always starts with a question mark
+and questions are separated by '&'.
+
+GET and POST
+GET is used to request data from a resource
+POST is used to submit data to a resource
+
+an HTTP request is messge setn by a web browser to a serve that requests
+an action or often a resource.
+
+an HTTP response is the reply to the requestsent by a server to a
+web browser
+
+HTTP headers provide additional information about a request or response
+they contain metedata that says how thr message should be processed,
+or displayed
+
+First the browser check its cache to see if the IP address is already known
+if not it will send the requet to a DNS server. after this the browser can
+make a connection with, in our case; somesite.com.
+After this the browser wull send a HTTP GET request to get the specific
+resource /some/page.html.
+the server will generate a response containing the resource (page.html).
+Now the broweser can process the HTML, CSS, JAvascript and whatever other
+resources there may be and render them on the users screen.
